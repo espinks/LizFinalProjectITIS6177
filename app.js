@@ -17,7 +17,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use('/API', apiRouter);
 app.route('/').get((req, res) => {
-    res.status(200).send('Welcome to the API');
+    res.render('./index');
 });
 
 
