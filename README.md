@@ -32,7 +32,7 @@ The three functionalities built into my API are: language list, detect language,
 ### Requirements 
 
 - You must create an [Azure Translator Resource](https://azure.microsoft.com/en-us/products/cognitive-services/translator/)
-- Your "Key" "Endpoint" and "Region" Variables must be set to match your Translator resource
+- Your ```Key``` ```Endpoint``` and ```Region``` Variables must be set to match your Translator resource
 
 ## Environment Variables 
 
