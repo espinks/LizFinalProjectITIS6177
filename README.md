@@ -39,7 +39,6 @@ The three functionalities built into my API are: language list, detect language,
 | `SECRET="<SECRET>"`                 | This is the secret key used to authenticate the user                          |
 
 
-
 ## Endpoints
 
 | Endpoint             | Description                                     |
@@ -56,3 +55,20 @@ The Live API can be used by sending a GET request to the above endpoints. The re
 - Translate: ```text``` to be translated and ```to``` language to translate to
 - Detect: ```text``` to be identified
 
+## Example Request
+
+```
+{ 
+    "text": "This is a test",
+    "to": "fr"
+}
+```
+
+## Example Output
+
+```
+{
+    "text": "C’est un test",
+    "to":"fr"
+}
+```

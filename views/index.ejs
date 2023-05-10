@@ -10,33 +10,35 @@
     <script>
       function process()
       {
-          var url = "/API/detect/?text=" + document.getElementById("input").value;
+          var url = "/API/detect/?text=" + document.getElementById("text-input").value;
           location.href = url;
           return false;
       }
   </script>
+
   <h2>Language Detection</h2>
   <form onSubmit="return process();">
     <div class="input-group">
       <label for="text-input">Input Text:</label>
       <input type="text" id="text-input">
-      </div>
-      <input type="submit" value="Detect Language" class="submit-button">
+    </div>
+  <input type="submit" value="Detect Language" class="submit-button" id="input">
   </form><br>
 
   <script>
     function process2()
     {
-        var url = "/API/translate/?text=" + document.getElementById("input2").value + "&to=" + document.getElementById("lang").value;
+        var url = "/API/translate/?text=" + document.getElementById("text-input2").value + "&to=" + document.getElementById("language-input").value;
         location.href = url;
         return false;
     }
 </script>
+
 <h2>Translation</h2>
 <form onSubmit="return process2();">
   <div class="input-group">
     <label for="text-input">Input Text:</label>
-    <input type="text" id="text-input">
+    <input type="text" id="text-input2">
   </div>
 
   <div class="input-group">
