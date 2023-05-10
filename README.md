@@ -29,6 +29,11 @@ The three functionalities built into my API are: language list, detect language,
 [ ] run command 'node app.js'
 ```  
 
+### Requirements 
+
+- You must create an [Azure Translator Resource](https://azure.microsoft.com/en-us/products/cognitive-services/translator/)
+- Your "Key" "Endpoint" and "Region" Variables must be set to match your Translator resource
+
 ## Environment Variables 
 
 | Variable                            | Description                                                                           |
@@ -36,7 +41,6 @@ The three functionalities built into my API are: language list, detect language,
 | `TRANSLATOR_TEXT_REGION="<REGION>"` | This is the region that is used to translate the text. It should be in the format "region" e.g. "eastus". This must match the Azure region |
 | `TRANSLATOR_TEXT_RESOURCE_KEY="<API KEY>"` | This is the API key to authenticate the user |
 | `TRANSLATOR_TEXT_ENDPOINT="https://api.cognitive.microsofttranslator.com"` | This is the endpoint used to translate the text |
-| `SECRET="<SECRET>"`                 | This is the secret key used to authenticate the user                          |
 
 
 ## Endpoints
@@ -46,6 +50,7 @@ The three functionalities built into my API are: language list, detect language,
 | `GET /languages`     | Returns list of languages the API supports      |
 | `GET /translate`     | Translate specified text into target language   |
 | `GET /detect`        | Identify the source language of specified text  |
+
 
 ## Using the Live API
 
