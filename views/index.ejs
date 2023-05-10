@@ -4,6 +4,7 @@
     <h1>Azure Translate</h1>
     <p>Welcome to my final project for ITIS 6177.<br><br>
     This project serves as an API connecting you, the user, to Microsoft Azure's Translator API, providing an intuitive and seamless design.</p> 
+    <h2>Language List</h2><br>
     <a href="/API/languages/?scope=translation"><button>See Available Languages</button></a><br><br>
 
     <script>
@@ -14,7 +15,7 @@
           return false;
       }
   </script>
-  
+  <h2>Language Detection</h2><br>
   <form onSubmit="return process();">
       Input text: <input type="text" name="input" id="input">
       <input type="submit" value="Detect Language">
@@ -28,6 +29,7 @@
         return false;
     }
 </script>
+<h2>translation</h2>
 <form onSubmit="return process2();">
   Input text: <input type="text" name="input2" id="input2"><br>
   Input 2 character language code to translate to (for list of applicable languages, see above): <input type="text" name="lang" id="lang">
