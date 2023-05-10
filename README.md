@@ -31,10 +31,10 @@ The three functionalities built into my API are: language list, detect language,
 
 ## Endpoints
 
------------
-|Endpoint | Description|
-|----------------------|
-|```GET /languages``` | Returns list of languages the API supports |
-|```GET /translate``` | Translate specified text into target language |
-|```GET /detect``` | Identify the source language of specified text |
-----------------
+| Endpoint             | Description                                     |
+| -------------------- | ----------------------------------------------- |
+| `GET /languages`     | Returns list of languages the API supports      |
+| `GET /translate`     | Translate specified text into target language   |
+| `GET /detect`        | Identify the source language of specified text  |
+
+
