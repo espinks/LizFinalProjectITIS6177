@@ -24,9 +24,9 @@ The three functionalities built into my API are: language list, detect language,
 ## Local Usage
 
 ```
-[ ] clone the git repository
-[ ] run command 'npm i'
-[ ] run command 'node app.js'
+[] clone the git repository
+[] run command 'npm i'
+[] run command 'node app.js'
 ```  
 
 ## Endpoints
@@ -36,5 +36,3 @@ The three functionalities built into my API are: language list, detect language,
 | `GET /languages`     | Returns list of languages the API supports      |
 | `GET /translate`     | Translate specified text into target language   |
 | `GET /detect`        | Identify the source language of specified text  |
-
-
