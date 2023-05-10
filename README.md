@@ -1,6 +1,6 @@
 # Azure Translate API
 
-Welcome to my final project for ITIS 6177. This project serves as an API connecting you, the user, to Microsoft Azure's Translator API, providing an intuitive and seamless design.
+Welcome to my final project for ITIS 6177. This project serves as an API connecting you, the user, to Microsoft Azure's Translator API, providing an intuitive and seamless design. This is a REST API using Azure Cognitive Services to translate text, hosted on Azure App Service. 
 
 Live API link: http://172.190.81.205:8080/api
 
@@ -24,10 +24,21 @@ The three functionalities built into my API are: language list, detect language,
 ## Local Usage
 
 ```
-[] clone the git repository
-[] run command 'npm i'
-[] run command 'node app.js'
+[ ] clone the git repository
+[ ] run command 'npm i'
+[ ] run command 'node app.js'
 ```  
+
+## Environment Variables 
+
+| Variable                            | Description                                                                           |
+| ----------------------------------- | ------------------------------------------------------------------------------------- |
+| `TRANSLATOR_TEXT_REGION="<REGION>"` | This is the region that used to translate the text. It should be in the format "region" e.g. "eastus" |
+| `TRANSLATOR_TEXT_RESOURCE_KEY="<API KEY>"` | This is the API key to authenticate the user |
+| `TRANSLATOR_TEXT_ENDPOINT="https://api.cognitive.microsofttranslator.com"` | This is the endpoint used to translate the text |
+| `SECRET="<SECRET>"`                 | This is the secret key used to authenticate the user                          |
+
+
 
 ## Endpoints
 
@@ -36,3 +47,11 @@ The three functionalities built into my API are: language list, detect language,
 | `GET /languages`     | Returns list of languages the API supports      |
 | `GET /translate`     | Translate specified text into target language   |
 | `GET /detect`        | Identify the source language of specified text  |
+
+## Using the Live API
+
+The Live API can be used by sending a GET request to the above endpoints. The request body should be in JSON format. 
+
+- Languages: no request body needed
+- Translate: ```text``` to be translated and ```to``` language to translate to
+- Detect: ```text``` to be identified
