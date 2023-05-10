@@ -16,6 +16,7 @@ app.use(cors());
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use('/API', apiRouter);
+app.use('/', apiRouter);
 app.route('/').get((req, res) => {
     res.render('./index');
 });

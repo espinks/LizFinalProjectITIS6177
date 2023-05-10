@@ -52,6 +52,7 @@ The three functionalities built into my API are: language list, detect language,
 
 The Live API can be used by sending a GET request to the above endpoints. The request body should be in JSON format. 
 
-- Languages: no request body needed
+- Languages: ```scope``` key and ```translation``` value
 - Translate: ```text``` to be translated and ```to``` language to translate to
 - Detect: ```text``` to be identified
+
