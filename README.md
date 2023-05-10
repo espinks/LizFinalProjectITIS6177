@@ -4,6 +4,8 @@ Welcome to my final project for ITIS 6177. This project serves as an API connect
 
 Live API link: http://172.190.81.205:8080/api
 
+## Features 
+
 The three functionalities built into my API are: language list, detect language, and translate.
 
 - Language list returns a JSON of all possible translatable languages that Azure Translate supports, along with their 2 character language code. This functionality can be found by simply clicking the button labeled "See Available Languages" on the landing page of my API.
@@ -18,3 +20,21 @@ The three functionalities built into my API are: language list, detect language,
 - Azure Cognitive Services (API Key and Endpoint)
 - Azure App Service (Optional)
 - Postman (Optional)
+
+## Local Usage
+
+```
+[ ] clone the git repository
+[ ] run command 'npm i'
+[ ] run command 'node app.js'
+```  
+
+## Endpoints
+
+-----------
+|Endpoint | Description|
+|----------------------|
+|```GET /languages``` | Returns list of languages the API supports |
+|```GET /translate``` | Translate specified text into target language |
+|```GET /detect``` | Identify the source language of specified text |
+----------------
