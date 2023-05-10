@@ -1,11 +1,11 @@
 <%- include('./partials/header.ejs')%>
 <title>ITIS 6177 Final Project</title> 
-  <div class="content">
+  <div class="input-container">
     <h1>Azure Translate</h1>
     <p>Welcome to my final project for ITIS 6177.<br><br>
     This project serves as an API connecting you, the user, to Microsoft Azure's Translator API, providing an intuitive and seamless design.</p> 
     <h2>Language List</h2>
-    <a href="/API/languages/?scope=translation"><button>See Available Languages</button></a><br><br>
+    <a href="/API/languages/?scope=translation"><button class="button">See Available Languages</button></a><br><br>
 
     <script>
       function process()
@@ -17,8 +17,11 @@
   </script>
   <h2>Language Detection</h2>
   <form onSubmit="return process();">
-      Input text: <input type="text" name="input" id="input">
-      <input type="submit" value="Detect Language">
+    <div class="input-group">
+      <label for="text-input">Input Text:</label>
+      <input type="text" id="text-input">
+      </div>
+      <input type="submit" value="Detect Language" class="submit-button">
   </form><br>
 
   <script>
@@ -31,9 +34,18 @@
 </script>
 <h2>Translation</h2>
 <form onSubmit="return process2();">
-  Input text: <input type="text" name="input2" id="input2"><br>
-  Input 2 character language code to translate to (for list of applicable languages, see above): <input type="text" name="lang" id="lang">
-  <input type="submit" value="Translate">
+  <div class="input-group">
+    <label for="text-input">Input Text:</label>
+    <input type="text" id="text-input">
+  </div>
+
+  <div class="input-group">
+    <label for="language-input">Input Language Code:</label>
+    <input type="text" id="language-input">
+  </div>
+
+  <p class="message">Input must be formatted as a two character language code. To view all language codes, see above.</p>
+  <input type="submit" value="Translate" class="submit-button">
 </form><br><br><br>
 
 
